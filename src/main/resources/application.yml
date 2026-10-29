@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: DvP Bridge TARGET System
+    version: 1.0.0
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:h2:mem:dvpbridge;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: null
+  h2:
+    console:
+      enabled: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    au.technograte.dvp: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+app:
+  blockchain:
+    rpc-url: http://localhost:8545
+    contract-address: 0x0000000000000000000000000000000000000000
+    network-id: 1337
+  target:
+    bic: DEUTDEDD
+    account-number: DE89370400440532013000
+    settlement-timeout-seconds: 300
+  iso20022:
+    sender-name: DvP Bridge Service
+    sender-identification: TECHNOGRATE001
+  settlement:
+    poll-interval-seconds: 5
+    max-retries: 3
