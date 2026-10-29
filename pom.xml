@@ -17,8 +17,14 @@
     </organization>
     <developers>
         <developer>
-            <name>Engr Ammad Aslam</name>
-            <email>ammad@technograte.com.au</email>
+            <name>Engr Dr. Ammad Aslam</name>
+            <email>ammad1@iscte-iul.pt</email>
+            <organization>ISCTE-IUL (Instituto Universitário de Lisboa)</organization>
+            <organizationUrl>https://www.iscte-iul.pt</organizationUrl>
+            <roles>
+                <role>Lead Developer</role>
+                <role>Architect</role>
+            </roles>
         </developer>
     </developers>
 

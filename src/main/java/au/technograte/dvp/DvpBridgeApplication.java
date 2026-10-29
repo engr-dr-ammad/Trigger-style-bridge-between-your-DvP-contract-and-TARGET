@@ -9,7 +9,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * DvP Bridge Application - Trigger-style bridge between DvP contracts and TARGET payment system
  * Manages tokenized bonds, settlement, and ISO 20022 payment messaging
  *
- * Build by: Engr Ammad Aslam
+ * Developed by: Engr Dr. Ammad Aslam
+ * Email: ammad1@iscte-iul.pt
+ * Development: With AI-assisted tooling (Claude AI)
+ * Organization: ISCTE-IUL (Instituto Universitário de Lisboa)
+ * Version: 1.0.0
+ * Date: 2026-10-29
  */
 @SpringBootApplication
 @EnableScheduling

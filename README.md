@@ -2,9 +2,11 @@
 
 A comprehensive Java Spring Boot service that implements a **Delivery vs Payment (DvP)** bridge between tokenized bond contracts and the TARGET2 payment system using ISO 20022 standards.
 
-**Built by:** Engr Ammad Aslam  
+**Developed by:** Engr Dr. Ammad Aslam  
+**Development:** With AI-assisted tooling (Claude AI)  
 **Build Date:** 2026-10-29  
-**Organization:** Technograte  
+**Email:** ammad1@iscte-iul.pt  
+**Organization:** ISCTE-IUL / Technograte  
 
 ---
 
@@ -406,13 +408,29 @@ Proprietary - Technograte
 
 ---
 
-## Support
+## Support & Contact
 
-**Developer**: Engr Ammad Aslam  
-**Email**: ammad@technograte.com.au  
-**Organization**: Technograte
+**Lead Developer**: Engr Dr. Ammad Aslam  
+**Email**: ammad1@iscte-iul.pt  
+**Development Methodology**: AI-Assisted Development with Claude AI  
+**Organization**: ISCTE-IUL (Instituto Universitário de Lisboa)  
+**Secondary Email**: ammad@technograte.com.au
+
+---
+
+## Attribution
+
+**Developed by:** Engr Dr. Ammad Aslam with AI-assisted tooling (Claude AI)
+
+This project demonstrates modern software engineering practices combining:
+- Expert domain knowledge (DvP, ISO 20022, TARGET payments)
+- AI-assisted code generation and optimization
+- Clean architecture and best practices
+- Production-ready Java Spring Boot implementation
 
 ---
 
 **Version**: 1.0.0  
-**Last Updated**: 2026-10-29
+**Build Date**: 2026-10-29  
+**Last Updated**: 2026-10-29  
+**Repository**: https://github.com/engr-dr-ammad/Trigger-style-bridge-between-your-DvP-contract-and-TARGET
