@@ -28,8 +28,12 @@ public class BondController {
     private BlockchainIntegrationService blockchainService;
 
     @PostMapping("/create")
-    public ResponseEntity<Bond> createBond(@RequestBody BondCreationRequest request) {
+    public ResponseEntity<?> createBond(@RequestBody BondCreationRequest request) {
         try {
+            if (request.getIssuer() == null || request.getHolder() == null) {
+                return ResponseEntity.badRequest().body("Issuer and Holder are required");
+            }
+
             String tokenId = blockchainService.createBondToken(
                     request.getIssuer(),
                     request.getHolder(),
@@ -49,7 +53,8 @@ public class BondController {
 
             return ResponseEntity.status(HttpStatus.CREATED).body(bond);
         } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
+            e.printStackTrace();
+            return ResponseEntity.badRequest().body("Error creating bond: " + e.getMessage());
         }
     }
 
